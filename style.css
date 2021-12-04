@@ -1,3 +1,4 @@
+
 #jumbotron {
   background: url(https://images.unsplash.com/photo-1528334713982-2d1fe11a157a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) center center no-repeat;
   background-size: cover;
@@ -24,6 +25,7 @@
 
 form {
   border: solid 1px black;
+  margin: 2em;
   display: flex;
   flex-direction: column;
   margin: 1rem 1rem;
@@ -60,15 +62,17 @@ footer {
 
 #gallery img {
   display: block;
+  max-height: 300px;
   height: auto;
-  width: 92.5%;
+  max-width: 300px;;
+  width: auto;
   margin: auto;
 }
 
 @media (max-width: 549px){
   .hidden--mobile {
     display: none !important;
-  }  
+  }
 
   nav {
     display: flex;
@@ -116,7 +120,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 0 0;
-  } 
+  }
 
   nav > ul > li {
     display: inline-block;
